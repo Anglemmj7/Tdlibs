@@ -41,4 +41,3 @@ if (NOT HEAD_HASH)
   file(READ "@GIT_DATA@/head-ref" HEAD_HASH LIMIT 1024)
   string(STRIP "${HEAD_HASH}" HEAD_HASH)
 endif()
-
