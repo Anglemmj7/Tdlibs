@@ -242,7 +242,7 @@ macro (find_host_package)
     set (CMAKE_FIND_ROOT_PATH_MODE_INCLUDE NEVER)
     set (IOS FALSE)
 
-    find_package(${ARGN})
+    find_package(${ARGN}) 
 
     set (IOS TRUE)
     set (CMAKE_FIND_ROOT_PATH_MODE_PROGRAM ONLY)
