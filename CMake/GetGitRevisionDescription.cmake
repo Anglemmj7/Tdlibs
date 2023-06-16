@@ -125,3 +125,7 @@ function(get_git_head_revision _refspecvar _hashvar)
   set(${_refspecvar} "${HEAD_REF}" PARENT_SCOPE)
   set(${_hashvar} "${HEAD_HASH}" PARENT_SCOPE)
 endfunction()
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake --build .
